@@ -16,15 +16,15 @@ const F_LOWER = 0;
 if (isNaN(numberGrade)) {
   console.log("\nInvalid.\n");
 } else if (numberGrade >= A_LOWER && numberGrade <= A_UPPER) {
-  console.log("\nYou received an A.");
+  console.log("\nYou received an A.\n");
 } else if (numberGrade >= B_LOWER && numberGrade <= B_UPPER) {
-  console.log("\nYou received a B.");
+  console.log("\nYou received a B.\n");
 } else if (numberGrade >= C_LOWER && numberGrade <= C_UPPER) {
-  console.log("\nYou received a C.");
+  console.log("\nYou received a C.\n");
 } else if (numberGrade >= D_LOWER && numberGrade <= D_UPPER) {
-  console.log("\nYou received a D.");
+  console.log("\nYou received a D.\n");
 } else if (numberGrade >= F_LOWER && numberGrade <= F_UPPER) {
-  console.log("\nYou received an F.");
+  console.log("\nYou received an F.\n");
 } else {
-  console.log("\nInvalid.")
+  console.log("\nInvalid.\n")
 }
