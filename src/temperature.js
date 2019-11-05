@@ -3,7 +3,7 @@ const readlineSync = require("readline-sync");
 const MIN = Number.MIN_SAFE_INTEGER;
 const MAX = Number.MAX_SAFE_INTEGER;
 
-const temperature = readlineSync.question("\nEnter a temperature: ");
+const temperature = Number(readlineSync.question("\nEnter a temperature: "));
 let scale = readlineSync.question("Enter a scale: ");
 scale = scale.toLowerCase();
 
@@ -12,7 +12,7 @@ if (temperature > MAX || temperature < MIN) {
 } else if (scale != "f" && scale != "c" && scale && "k") {
   console.log("\nInvalid.\n");
 } else if (!Number.isInteger(temperature)) {
-  console.log("\nInvalid.\n")
+  console.log("\nInvalid.\n");
 } else if (scale == "f") {
   if (temperature < 32) {
     console.log("\nSolid.\n");
