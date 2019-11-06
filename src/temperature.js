@@ -9,7 +9,7 @@ scale = scale.toLowerCase();
 
 if (temperature > MAX || temperature < MIN) {
   console.log("\nInvalid.\n");
-} else if (scale != "f" && scale != "c" && scale && "k") {
+} else if (scale != "f" && scale != "c" && scale != "k") {
   console.log("\nInvalid.\n");
 } else if (!Number.isInteger(temperature)) {
   console.log("\nInvalid.\n");
@@ -20,19 +20,19 @@ if (temperature > MAX || temperature < MIN) {
     console.log("\nLiquid.\n");
   } else {
     console.log("\nGas.\n");
-  }
+}
 } else if (scale == "c") {
-  if (temperature < 32) {
+  if (temperature < 0) {
     console.log("\nSolid.\n");
-  } else if (temperature >= 32 && temperature <= 212) {
+  } else if (temperature >= 0 && temperature <= 100) {
     console.log("\nLiquid.\n");
   } else {
     console.log("\nGas.\n");
   }
 } else if (scale == "k") {
-  if (temperature < 32) {
+  if (temperature < 273.15) {
     console.log("\nSolid.\n");
-  } else if (temperature >= 32 && temperature <= 212) {
+  } else if (temperature >= 273.15 && temperature <= 373.15) {
     console.log("\nLiquid.\n");
   } else {
     console.log("\nGas.\n");

@@ -16,7 +16,7 @@ if (letterGrade == "a" || letterGrade == "a+") {
 } else if (letterGrade == "c+") {
   console.log("\nYour GPA is 2.33.\n")
 } else if (letterGrade == "c") {
-  console.log("\nYour GPA is 3.00.\n")
+  console.log("\nYour GPA is 2.00.\n")
 } else if (letterGrade == "c-") {
   console.log("\nYour GPA is 1.67.\n")
 } else if (letterGrade == "d+") {
